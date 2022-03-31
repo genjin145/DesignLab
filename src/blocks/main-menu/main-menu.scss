@@ -1,0 +1,45 @@
+.main-menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  &__item {
+    margin: 8px 16px;
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    color: #333333;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+
+    &:hover,
+    &_active {
+      color: #2168de;
+
+      .main-menu__link-icon {
+        stroke: #2168de;
+      }
+    }
+
+    &_last {
+      color: #afb3bb;
+
+      .main-menu__link-icon {
+        stroke: #afb3bb;
+      }
+    }
+
+    &-icon {
+      margin-left: 4px;
+      width: 16px;
+      height: 16px;
+      stroke: #333333;
+    }
+  }
+}

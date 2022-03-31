@@ -1,0 +1,24 @@
+extends ../layouts/catalog
+
+block content
+  .container
+    include ../blocks/breadcrumbs/breadcrumbs
+    h1.catalog__title Строительство саун
+    include ../blocks/catalog-tags/catalog-tags
+
+    div.catalog__controls
+      include ../blocks/catalog-sort/catalog-sort
+
+      button.catalog__show-filter.catalog__show-filter_active
+        +icon('filter', 'catalog__show-filter-icon')
+        span.catalog__show-filter-text Скрыть фильтр
+
+  .catalog__body.container
+    include ../blocks/catalog-products/catalog-products
+    include ../blocks/catalog-filter/catalog-filter
+
+block modal
+  //- include ../blocks/modal/modal
+
+block scripts
+  script(src="js/script.js")

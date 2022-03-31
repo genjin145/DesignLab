@@ -1,0 +1,31 @@
+article.product-card
+  .product-card__top
+    a.product-card__img-link(href="#")
+      picture.product-card__picture
+        img.product-card__picture-img(src="../assets/img/content/product-1.jpg" alt="Сауна")
+      span.product-card__part(data-src="../assets/img/content/product-1.jpg")
+      span.product-card__part(data-src="../assets/img/content/product-2.jpg")
+      span.product-card__part(data-src="../assets/img/content/product-3.jpg")
+
+
+    .product-card__points
+      button.product-card__point(aria-label="1")
+      button.product-card__point(aria-label="2")
+      button.product-card__point(aria-label="3")
+
+    .product-card__controls
+      a.product-card__control.product-card__comment(href="#" aria-label="Комментарии")
+       +icon('comment', 'product-card__control-icon')
+       span.product-card__control-count 2
+      button.product-card__control.product-card__favorite(aria-label="Избранное")
+        +icon('heart', 'product-card__control-icon product-card__favorite-icon')
+        span.product-card__control-count 134
+
+  a.product-card__bottom(href="#")
+    p.product-card__info Сауна
+      span.product-card__dot  • 
+      | 34 м2 
+      span.product-card__dot  • 
+      | EOS 
+    p.product-card__address Москва, квартира
+    h2.product-card__title Твой пар

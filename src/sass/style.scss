@@ -1,0 +1,24 @@
+@import "./fonts/Gilroy.scss";
+
+@import "../blocks/page.scss";
+@import "../blocks/container.scss";
+@import "../blocks/buttons.scss";
+@import "../blocks/icon.scss";
+
+@import "../blocks/logo/logo.scss";
+@import "../blocks/main-menu/main-menu.scss";
+@import "../blocks/header/header.scss";
+
+@import "../blocks/burger-popup/burger-popup.scss";
+
+@import "../blocks/catalog.scss";
+@import "../blocks/catalog-tags/catalog-tags.scss";
+@import "../blocks/catalog-sort/catalog-sort.scss";
+
+@import "../blocks/breadcrumbs/breadcrumbs.scss";
+
+@import "../blocks/product-card/product-card.scss";
+@import "../blocks/catalog-filter/catalog-filter.scss";
+@import "../blocks/catalog-products/catalog-products.scss";
+
+@import "../blocks/modal/modal.scss";

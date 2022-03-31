@@ -1,0 +1,19 @@
+mixin icon(mod, name)
+  svg(class=[`icon icon_${mod}`, name].filter(Boolean).join(' '))
+    use(xlink:href="assets/img/sprite/symbol/sprite.svg#" + mod)
+
+mixin menu(className)
+  if className
+    -
+      item = className + "-item"
+      link = className + "-link"
+  else
+    -
+      item = ""
+      link = ""
+
+  ul.main-menu(class=className)
+    li.main-menu__item(class=item)
+      a.main-menu__link(class=link, href="/") Main
+    li.main-menu__item(class=item)
+      a.main-menu__link(class=link, href="/info.html") Info

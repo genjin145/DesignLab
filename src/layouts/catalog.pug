@@ -1,0 +1,25 @@
+include ../pug/vars
+include ../pug/mixin
+
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="description", content=description)
+    title #{title}
+    link(rel="icon", type="image/png" , href="img/favicon.png")
+    link(rel="stylesheet", href="css/style.css")
+  body.page
+    block header
+      include ../blocks/header/header
+      include ../blocks/burger-popup/burger-popup
+
+    main.catalog
+      block content
+
+    block footer
+
+    block modal
+
+    block scripts

@@ -1,0 +1,27 @@
+.catalog-tags {
+  display: flex;
+  gap: 8px;
+  margin: 0;
+  margin-bottom: 42px;
+  padding: 0;
+  list-style-type: none;
+  overflow-x: auto;
+
+  &__link {
+    display: block;
+    padding: 4px 16px;
+    color: #333333;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 32px;
+    white-space: nowrap;
+    background-color: #f2f4f7;
+    border-radius: 10px;
+
+    &:hover {
+      color: #2168de;
+      background-color: #f4f7fd;
+    }
+  }
+}

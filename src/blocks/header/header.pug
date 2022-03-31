@@ -1,0 +1,20 @@
+header.header
+  .header__inner.container
+    include ../logo/logo
+
+    nav.header__nav
+      include ../main-menu/main-menu
+
+    div.header__controls
+      a.header__control(href="#" aria-label="Уведомления")
+        +icon('notification', 'header__control-icon')
+        span.header__control-counter 2
+
+      a.header__control(href="#" aria-label="Избранные товары")
+        +icon('favourite', 'header__control-icon')
+
+      a.header__order.button-outline.button-outline_color_primary(href="#") Заказать проект
+      a.header__sigin.button-outline(href="#") Войти
+
+      button.header__burger.burger
+        span.burger__line

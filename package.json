@@ -1,0 +1,33 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp build",
+    "serve": "gulp serve"
+  },
+  "keywords": [],
+  "author": "genjin145",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.16.11",
+    "autoprefixer": "^10.4.4",
+    "babel-loader": "^8.2.4",
+    "browser-sync": "^2.27.9",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-svg-sprite": "^1.5.0",
+    "postcss": "^8.4.12",
+    "sass": "^1.49.9",
+    "svg4everybody": "^2.1.9",
+    "webpack": "^5.70.0",
+    "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {}
+}
